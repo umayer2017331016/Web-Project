@@ -20,7 +20,6 @@ app.use(express.json());
 app.use('/user',userRoutes);
 app.use('/bank',bankRoutes);
 app.use('/cart',cartRoutes);
-app.use('/otp',otpRoutes); 
 app.use('/order',orderRoutes);
 app.use('/supplier',supplierRoutes);
 app.use('/dev',devRoutes)
