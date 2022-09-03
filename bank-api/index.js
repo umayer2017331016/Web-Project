@@ -1,7 +1,6 @@
 const express = require('express');
 require('dotenv').config()
 require('./src/db/mongoose')
-//require('./generateBankData') // generating bank-account 
 const app= express();
 
 let cors = require('cors') 
@@ -24,7 +23,6 @@ app.use(express.json());
 app.use('/add',addTransaction);
 app.use('/balance',checkBalance);
 app.use('/valid',validity);
-//app.use('/adjust',adjustBalance);
 app.use('/dev',devRoutes)
 
 
